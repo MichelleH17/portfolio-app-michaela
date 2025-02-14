@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Project One",
+    "summary": "This is a summary of Project One.",
+    "description": "This is a description of Project One.",
+    "image": "https://via.placeholder.com/150",
+    "link": "https://github.com/username/project-one"
+  },
+  {
+    "title": "Project Two",
+    "summary": "This is a summary of Project Two.",
+    "description": "This is a description of Project Two.",
+    "image": "https://via.placeholder.com/150",
+    "link": "https://github.com/username/project-two"
+  }
+]

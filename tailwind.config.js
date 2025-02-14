@@ -10,6 +10,10 @@ export default {
         custom_darker_green: "#869681",
         custom_gray: "#f7f7f7",
       },
+      fontFamily: {
+        Outfit: ['Outfit', 'sans-serif'],
+        Ovo: ['Ovo', 'sans-serif'],
+      },
     },
   },
   plugins: [],

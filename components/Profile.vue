@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex flex-col items-center mt-4 md:mt-8 text-custom_black px-4">
+    <div class="flex flex-col items-center mt-4 sm:mt-8 md:mt-16 text-custom_black px-4">
       <NuxtImg fit="cover" format="webp" src="../public/assets/images/michaela_avatar.jpg" alt="Profile picture" width="400" height="400" class="rounded-full" />
       <h2 class="text-custom_darker_green text-3xl font-semibold mt-4">Michaela Havlíková</h2>
       <h3 class="text-lg text-custom_black">Frontend developer</h3>

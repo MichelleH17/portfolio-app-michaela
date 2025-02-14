@@ -4,9 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary_text: "#2a2a2a",
+        custom_black: "#2a2a2a",
         custom_orange: "#ff9e03",
         custom_green: "#c2deb9",
+        custom_darker_green: "#869681",
         custom_gray: "#f7f7f7",
       },
     },

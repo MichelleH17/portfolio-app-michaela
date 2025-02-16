@@ -1,16 +1,26 @@
 [
   {
-    "title": "Project One",
-    "summary": "This is a summary of Project One.",
-    "description": "This is a description of Project One.",
+    "title": "Vue E-shop",
+    "description": "This project is in Vue 3 and includes features such as product listings, shopping cart and order process. It allows users to create orders and view a list of orders with details of each individual order. The project uses Pinia store for managing product and order states.",
     "image": "https://via.placeholder.com/150",
-    "link": "https://github.com/username/project-one"
+    "link": "https://github.com/MichelleH17/vue-eshop-michaela"
   },
   {
-    "title": "Project Two",
-    "summary": "This is a summary of Project Two.",
-    "description": "This is a description of Project Two.",
+    "title": "Nuxt Dojo",
+    "description": "This project covers various Nuxt.js features and best practices for building modern web applications. The project uses TailwindCSS for styling, includes pages and layouts, handles data fetching, and implements error pages. It also manages metadata with useHead, supports routing with NuxtLink, and demonstrates best practices for building scalable applications.",
     "image": "https://via.placeholder.com/150",
-    "link": "https://github.com/username/project-two"
+    "link": "https://github.com/MichelleH17/nuxt-dojo-michaela"
+  },
+  {
+    "title": "Vue Job List",
+    "description": "This project uses TailwindCSS, Vue Router, PrimeIcons, PostCSS, and Vite. It displays a list of job listings and details of specific job offers. Additionally, it includes a Not Found Page for handling invalid routes.",
+    "image": "https://via.placeholder.com/150",
+    "link": "https://github.com/MichelleH17/job-list"
+  },
+  {
+    "title": "Nuxt Recipe App",
+    "description": "This project uses Iconify, Nuxt modules such as Image, UI, Google Fonts, and Vue Router. The file directory is structured according to Nuxt 4 standards. It has colorMode settings, and uses useHead and useSeoMeta for managing metadata. The app displays a list of recipes and details of individual recipes, including ingredients and preparation steps.",
+    "image": "https://via.placeholder.com/150",
+    "link": "https://github.com/MichelleH17/nuxt-recipe-app"
   }
 ]

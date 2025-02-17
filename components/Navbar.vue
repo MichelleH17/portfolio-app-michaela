@@ -13,7 +13,7 @@
 </template>
 
 <style scoped>
-  .router-link-exact-active {
+  .router-link-active {
     background-color: #c2deb9;
     padding: 8px 16px;
     border-radius: 6px;

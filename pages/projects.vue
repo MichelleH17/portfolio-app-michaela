@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts" setup>
-  import projectData from '~/data/projects.json'
-  
-  const projects = ref(projectData)
+import projectData from '~/data/projects.json'
+
+const projects = ref(projectData)
 </script>

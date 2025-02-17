@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-  const icons = [
+const icons = [
   { name: 'devicon:html5', title: 'HTML5' },
   { name: 'devicon:css3', title: 'CSS3' },
   { name: 'devicon:javascript', title: 'JavaScript' },

@@ -13,11 +13,11 @@
 </template>
 
 <script lang="ts" setup>
-  defineProps<{ 
-    project: IProject
-  }>()
+defineProps<{ 
+  project: IProject
+}>()
 
-  const truncateDescription = (description: string) => {
-    return description.length > 85 ? `${description.slice(0, 85)}...` : description
-  }
+const truncateDescription = (description: string) => {
+  return description.length > 85 ? `${description.slice(0, 85)}...` : description
+}
 </script>

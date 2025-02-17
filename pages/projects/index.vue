@@ -4,7 +4,8 @@
   </div>
 </template>
 
-<script setup>
-import projectData from '~/projects.json'
-const projects = ref(projectData)
+<script lang="ts" setup>
+  import projectData from '~/projects.json'
+  
+  const projects = ref(projectData)
 </script>

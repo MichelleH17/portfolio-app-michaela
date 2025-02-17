@@ -28,12 +28,12 @@
           >
             <DialogPanel class="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-md transition-all">
               <div class="absolute right-0 top-0 pr-4 pt-4 block">
-                <button type="button" @click="close" class="hover:bg-custom_green px-2 py-1 rounded-md">X</button>
+                <button type="button" @click="close" class="bg-custom_green hover:bg-custom_darker_green text-custom_black hover:text-white px-2 pb-1 pt-0.5 rounded-md">x</button>
               </div>
               <DialogTitle as="h3" class="text-xl font-semibold mb-4">{{ project.title }}</DialogTitle>
               <DialogDescription class="text-gray-700">{{ project.description }}</DialogDescription>
               <div class="mt-6">
-                <NuxtLink :to="project.link" target="_blank" rel="noopener noreferrer" class="rounded-md bg-custom_green px-4 py-2 text-sm font-medium text-custom_black hover:bg-custom_darker_green">Go to GitHub repo</NuxtLink>
+                <NuxtLink :to="project.link" target="_blank" rel="noopener noreferrer" class="rounded-md bg-custom_green px-4 py-2 text-sm font-medium text-custom_black hover:bg-custom_darker_green hover:text-white">Go to GitHub repo</NuxtLink>
               </div>
             </DialogPanel>
           </TransitionChild>

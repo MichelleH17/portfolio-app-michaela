@@ -26,7 +26,10 @@
             leave-from="opacity-100 scale-100"
             leave-to="opacity-0 scale-95"
           >
-            <DialogPanel class="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+            <DialogPanel class="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-md transition-all">
+              <div class="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
+                <button type="button" @click="close" class="hover:bg-custom_green px-2 py-1 rounded-md">X</button>
+              </div>
               <DialogTitle as="h3" class="text-xl font-semibold mb-4">{{ project.title }}</DialogTitle>
               <DialogDescription class="text-gray-700">{{ project.description }}</DialogDescription>
               <div class="mt-6">
@@ -51,5 +54,20 @@
   const id = useRoute().params.id
   const project = computed(() => projectData.find((project) => project.id === +id)!)
 
+  const emit = defineEmits<{
+    (event: "close"): void;
+  }>();
+
+  const close = () => {
+  isOpen.value = false;
+  setTimeout(() => {
+    emit("close");
+  }, 300);
+};
+
   const isOpen = ref(true)
+
+  onMounted(() => {
+    isOpen.value = true;
+  });
 </script>

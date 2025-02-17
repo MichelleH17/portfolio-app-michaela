@@ -12,15 +12,10 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-
-</script>
-
 <style scoped>
   .router-link-exact-active {
     background-color: #c2deb9;
     padding: 8px 16px;
     border-radius: 6px;
   }
-
 </style>

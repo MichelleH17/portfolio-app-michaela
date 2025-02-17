@@ -13,8 +13,6 @@
 </template>
 
 <script lang="ts" setup>
-  import projectData from '~/data/projects.json'
-
   defineProps<{ 
     project: IProject
   }>()

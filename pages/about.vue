@@ -36,7 +36,7 @@
           <p>Participating in daily stand-ups and sprint planning meetings.</p>
         </div>
       </div> 
-      </div>
+    </div>
 
     <h2 class="text-custom_darker_green text-2xl font-semibold mt-8">Contact details</h2>
     <div class="text-gray-700 font-semibold my-4 sm:my-8 flex gap-8">

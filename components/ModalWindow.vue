@@ -1,6 +1,6 @@
 <template>
   <TransitionRoot :show="isOpen" as="template">
-    <Dialog :open="isOpen" @close="isOpen = false">
+    <Dialog @close="close">
       <TransitionChild
         as="template"
         enter="duration-300 ease-out"
@@ -15,7 +15,7 @@
 
       <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
         <div
-          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+          class="flex min-h-full justify-center p-4 text-center items-center sm:p-0"
         >
           <TransitionChild
             as="template"
@@ -27,7 +27,7 @@
             leave-to="opacity-0 scale-95"
           >
             <DialogPanel class="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-md transition-all">
-              <div class="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
+              <div class="absolute right-0 top-0 pr-4 pt-4 block">
                 <button type="button" @click="close" class="hover:bg-custom_green px-2 py-1 rounded-md">X</button>
               </div>
               <DialogTitle as="h3" class="text-xl font-semibold mb-4">{{ project.title }}</DialogTitle>
@@ -44,30 +44,33 @@
 </template>
 
 <script lang="ts" setup>
-  import projectData from '~/data/projects.json'
-  import {
+import projectData from '~/data/projects.json'
+import {
   Dialog,
   DialogPanel,
+  DialogDescription,
   DialogTitle,
+  TransitionChild,
+  TransitionRoot,
 } from '@headlessui/vue'
 
-  const id = useRoute().params.id
-  const project = computed(() => projectData.find((project) => project.id === +id)!)
+const id = useRoute().params.id
+const project = computed(() => projectData.find((project) => project.id === +id)!)
 
-  const emit = defineEmits<{
-    (event: "close"): void;
-  }>();
+const emit = defineEmits<{
+  (event: "close"): void;
+}>();
 
-  const close = () => {
+const close = () => {
   isOpen.value = false;
   setTimeout(() => {
     emit("close");
-  }, 300);
+  }, 200);
 };
 
-  const isOpen = ref(true)
+const isOpen = ref(true)
 
-  onMounted(() => {
-    isOpen.value = true;
-  });
+onMounted(() => {
+  isOpen.value = true;
+});
 </script>

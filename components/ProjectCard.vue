@@ -20,6 +20,6 @@
   }>()
 
   const truncateDescription = (description: string) => {
-    return description.length > 90 ? `${description.slice(0, 90)}...` : description
+    return description.length > 85 ? `${description.slice(0, 85)}...` : description
   }
 </script>

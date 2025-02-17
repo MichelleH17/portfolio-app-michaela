@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center mt-8 md:mt-16 text-custom_black px-4 font-Outfit">
+  <div class="flex flex-col items-center mt-8 md:mt-16 text-custom_black px-4">
     <h1 class="text-custom_darker_green text-3xl font-semibold text-center mb-4 sm:mb-8">About me</h1>
     <div class="border-gray-100 shadow-md rounded-md p-4 md:py-8 flex flex-col space-y-4">
       <p class="text-gray-700">I am a creative front-end developer with experience in administration, accounting, and HR, which allows me to effectively use my analytical and organizational skills. I am currently developing my own web application for real estate sales in Bulgaria.</p>

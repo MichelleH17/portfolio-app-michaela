@@ -1,5 +1,5 @@
 <template>
-  <div class="hover:border-custom_green hover:bg-custom_gray hover:shadow-custom_darker_green border border-gray-100 shadow-md rounded-md p-4 font-Outfit">
+  <div class="hover:border-custom_green hover:bg-custom_gray hover:shadow-custom_darker_green border border-gray-100 shadow-md rounded-md p-4">
     <div class="flex flex-col space-y-4">
       <h3 class="text-xl font-semibold">{{ project.title }}</h3>
       <p class="text-gray-700">{{ truncateDescription(project.description) }}</p>
